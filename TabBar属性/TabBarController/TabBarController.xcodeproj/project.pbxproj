@@ -19,6 +19,9 @@
 		D2087EDD1F95A40B001BCA8E /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2087EDC1F95A40B001BCA8E /* UIView+XMGExtension.m */; };
 		D2087EE11F95A4AF001BCA8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2087EE01F95A4AF001BCA8E /* ViewController.m */; };
 		D2087EE41F95B66C001BCA8E /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2087EE31F95B66C001BCA8E /* NextViewController.m */; };
+		D20B37AC1FB1AC7800855FC0 /* PathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D20B37AB1FB1AC7800855FC0 /* PathHelper.m */; };
+		D20B37AF1FB1ACC400855FC0 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D20B37AE1FB1ACC400855FC0 /* UserModel.m */; };
+		D20B37E31FB1BDA700855FC0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20B37E21FB1BDA700855FC0 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,12 @@
 		D2087EE01F95A4AF001BCA8E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D2087EE21F95B66C001BCA8E /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		D2087EE31F95B66C001BCA8E /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		D20B37AA1FB1AC7800855FC0 /* PathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathHelper.h; sourceTree = "<group>"; };
+		D20B37AB1FB1AC7800855FC0 /* PathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathHelper.m; sourceTree = "<group>"; };
+		D20B37AD1FB1ACC400855FC0 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		D20B37AE1FB1ACC400855FC0 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		D20B37E11FB1BDA700855FC0 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D20B37E21FB1BDA700855FC0 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +126,14 @@
 				D2087EA31F95A035001BCA8E /* AppDelegate.m */,
 				D2087EDF1F95A4AF001BCA8E /* ViewController.h */,
 				D2087EE01F95A4AF001BCA8E /* ViewController.m */,
+				D20B37AA1FB1AC7800855FC0 /* PathHelper.h */,
+				D20B37AD1FB1ACC400855FC0 /* UserModel.h */,
+				D20B37AE1FB1ACC400855FC0 /* UserModel.m */,
+				D20B37AB1FB1AC7800855FC0 /* PathHelper.m */,
 				D2087EE21F95B66C001BCA8E /* NextViewController.h */,
 				D2087EE31F95B66C001BCA8E /* NextViewController.m */,
+				D20B37E11FB1BDA700855FC0 /* LoginViewController.h */,
+				D20B37E21FB1BDA700855FC0 /* LoginViewController.m */,
 				D2087EDE1F95A40F001BCA8E /* Other */,
 				D2087ED71F95A368001BCA8E /* NavgationController */,
 				D2087ED51F95A245001BCA8E /* TabBarController */,
@@ -322,9 +337,12 @@
 				D2087EDD1F95A40B001BCA8E /* UIView+XMGExtension.m in Sources */,
 				D2087ED41F95A098001BCA8E /* TabBarController.m in Sources */,
 				D2087EDA1F95A390001BCA8E /* NavgationViewController.m in Sources */,
+				D20B37E31FB1BDA700855FC0 /* LoginViewController.m in Sources */,
+				D20B37AC1FB1AC7800855FC0 /* PathHelper.m in Sources */,
 				D2087EE41F95B66C001BCA8E /* NextViewController.m in Sources */,
 				D2087EA41F95A035001BCA8E /* AppDelegate.m in Sources */,
 				D2087EA11F95A035001BCA8E /* main.m in Sources */,
+				D20B37AF1FB1ACC400855FC0 /* UserModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +576,7 @@
 				D2087ECB1F95A035001BCA8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2087ECC1F95A035001BCA8E /* Build configuration list for PBXNativeTarget "TabBarControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +585,7 @@
 				D2087ECE1F95A035001BCA8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2087ECF1F95A035001BCA8E /* Build configuration list for PBXNativeTarget "TabBarControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +594,7 @@
 				D2087ED11F95A035001BCA8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

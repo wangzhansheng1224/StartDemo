@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 #import "NextViewController.h"
+#import "LoginViewController.h"
+#import "UserModel.h"
+#import "AppDelegate.h"
+
 
 @interface ViewController ()
 
@@ -24,6 +28,10 @@
     btn.backgroundColor=[UIColor redColor];
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    
+   
+    
     // Do any additional setup after loading the view.
 }
 
@@ -34,8 +42,19 @@
 
 
 - (void)btnClick{
-    NextViewController *vc=[[NextViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+    UserModel *user = [[UserModel alloc]init];
+    user.userID = 10;
+    [UserModel save:user];
+    
+    [UserModel removeUser];
+    UINavigationController *navController=((AppDelegate*)[UIApplication sharedApplication].delegate).navController;
+    NextViewController *nextViewController=[[NextViewController alloc] init];
+    LoginViewController *loginViewController=[[LoginViewController alloc] init];
+    if ([UserModel isHasLogin]) {
+        [navController pushViewController:nextViewController animated:YES];
+    }else{
+        [navController pushViewController:loginViewController animated:YES];
+    }
 }
 
 
