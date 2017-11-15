@@ -20,5 +20,7 @@
 
 
 #import "UIView+XMGExtension.h"
+#import "UserModel.h"
+#import "CTMediator+CTMediatorLoginActions.h"
 
 #endif /* PrefixHeader_pch */

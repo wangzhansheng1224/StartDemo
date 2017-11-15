@@ -8,9 +8,6 @@
 
 #import "ViewController.h"
 #import "NextViewController.h"
-#import "LoginViewController.h"
-#import "UserModel.h"
-#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -35,14 +32,10 @@
     [UserModel save:user];
     
     [UserModel removeUser];
-    UINavigationController *navController=((AppDelegate*)[UIApplication sharedApplication].delegate).navController;
-    NextViewController *nextViewController=[[NextViewController alloc] init];
-    LoginViewController *loginViewController=[[LoginViewController alloc] init];
-    if ([UserModel isHasLogin]) {
-        [navController pushViewController:nextViewController animated:YES];
-    }else{
-        [navController pushViewController:loginViewController animated:YES];
-    }
+    NextViewController *nextVC = [[NextViewController alloc]init];
+    UIViewController *controller = [[CTMediator sharedInstance]CTMediator_CheckIsLogin:nextVC];
+    [self.navigationController pushViewController:controller animated:YES];
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

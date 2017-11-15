@@ -12,7 +12,7 @@ static UserModel* currentUser;
 
 @implementation UserModel
 
-
+//写入数据
 + (void)save:(UserModel*)user
 {
     NSString* filePath = [self getStoragePath];
@@ -20,6 +20,7 @@ static UserModel* currentUser;
     [self load];
 }
 
+//存入空数据
 + (void)removeUser
 {
     if (currentUser) {
@@ -28,7 +29,7 @@ static UserModel* currentUser;
     }
 }
 
-//返回存储地址
+//返回存储地址(没有则创建地址)
 + (NSString*)getStoragePath
 {
     NSString* filePath = [[PathHelper documentDirectoryPathWithName:@"User"]

@@ -32,7 +32,7 @@
         //有新版本
         GuideViewController* guideVC = [[GuideViewController alloc]init];
         window.rootViewController = guideVC;
-//        [MBNSUserDefaultsTool setObject:currentVersion forKey:MBVersion];
+        [IMNSUserDefaultsTool setObject:currentVersion forKey:IMVersion];
         [window makeKeyAndVisible];
     
     }
