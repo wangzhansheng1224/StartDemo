@@ -10,6 +10,7 @@
 		ADA5C63B1D3113866DA7D203 /* libPods-StartDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF742EA25652CC7F2E24BAA /* libPods-StartDemo.a */; };
 		D25734941FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */; };
 		D25734971FBBDC5C004CE0B4 /* Target_Login.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734961FBBDC5C004CE0B4 /* Target_Login.m */; };
+		D257349A1FBC3BB3004CE0B4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734991FBC3BB3004CE0B4 /* HomeViewController.m */; };
 		D28F5ECE1FBA930900199FC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5ECD1FBA930900199FC5 /* AppDelegate.m */; };
 		D28F5ED11FBA930900199FC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5ED01FBA930900199FC5 /* ViewController.m */; };
 		D28F5ED41FBA930900199FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28F5ED21FBA930900199FC5 /* Main.storyboard */; };
@@ -29,6 +30,9 @@
 		D28F5F271FBA9EF500199FC5 /* IMGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5F261FBA9EF500199FC5 /* IMGuideTool.m */; };
 		D28F5F2A1FBA9F6800199FC5 /* IMNSUserDefaultsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5F291FBA9F6800199FC5 /* IMNSUserDefaultsTool.m */; };
 		D28F5F461FBAD2DC00199FC5 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5F441FBAD2DC00199FC5 /* GuideViewController.m */; };
+		D2D927D11FC57D480094A4B2 /* XHSegmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CD1FC57D470094A4B2 /* XHSegmentItem.m */; };
+		D2D927D21FC57D480094A4B2 /* XHSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CE1FC57D470094A4B2 /* XHSegmentControl.m */; };
+		D2D927D31FC57D480094A4B2 /* XHSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CF1FC57D470094A4B2 /* XHSegmentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +60,8 @@
 		D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+CTMediatorLoginActions.m"; sourceTree = "<group>"; };
 		D25734951FBBDC5C004CE0B4 /* Target_Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Login.h; sourceTree = "<group>"; };
 		D25734961FBBDC5C004CE0B4 /* Target_Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Login.m; sourceTree = "<group>"; };
+		D25734981FBC3BB3004CE0B4 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D25734991FBC3BB3004CE0B4 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D28F5EC91FBA930900199FC5 /* StartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28F5ECC1FBA930900199FC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D28F5ECD1FBA930900199FC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +101,12 @@
 		D28F5F291FBA9F6800199FC5 /* IMNSUserDefaultsTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMNSUserDefaultsTool.m; sourceTree = "<group>"; };
 		D28F5F441FBAD2DC00199FC5 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		D28F5F451FBAD2DC00199FC5 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		D2D927CB1FC57D470094A4B2 /* XHSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentViewController.h; sourceTree = "<group>"; };
+		D2D927CC1FC57D470094A4B2 /* XHSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentControl.h; sourceTree = "<group>"; };
+		D2D927CD1FC57D470094A4B2 /* XHSegmentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentItem.m; sourceTree = "<group>"; };
+		D2D927CE1FC57D470094A4B2 /* XHSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentControl.m; sourceTree = "<group>"; };
+		D2D927CF1FC57D470094A4B2 /* XHSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentViewController.m; sourceTree = "<group>"; };
+		D2D927D01FC57D470094A4B2 /* XHSegmentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D257349B1FBC3BD6004CE0B4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D25734981FBC3BB3004CE0B4 /* HomeViewController.h */,
+				D25734991FBC3BB3004CE0B4 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		D28F5EC01FBA930900199FC5 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +194,8 @@
 				D28F5F1A1FBA93A400199FC5 /* NextViewController.m */,
 				D28F5F1D1FBA9BC500199FC5 /* PrefixHeader.pch */,
 				D28F5ED51FBA930900199FC5 /* Assets.xcassets */,
+				D2D927C91FC57D400094A4B2 /* Library */,
+				D257349B1FBC3BD6004CE0B4 /* Home */,
 				D28F5F1C1FBA951800199FC5 /* NewVersions */,
 				D28F5F0D1FBA939400199FC5 /* Login */,
 				D28F5EFE1FBA939400199FC5 /* SuperVC */,
@@ -253,6 +276,27 @@
 				D28F5F441FBAD2DC00199FC5 /* GuideViewController.m */,
 			);
 			path = NewVersions;
+			sourceTree = "<group>";
+		};
+		D2D927C91FC57D400094A4B2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D2D927CA1FC57D470094A4B2 /* XHSegmentController */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		D2D927CA1FC57D470094A4B2 /* XHSegmentController */ = {
+			isa = PBXGroup;
+			children = (
+				D2D927CB1FC57D470094A4B2 /* XHSegmentViewController.h */,
+				D2D927CC1FC57D470094A4B2 /* XHSegmentControl.h */,
+				D2D927CD1FC57D470094A4B2 /* XHSegmentItem.m */,
+				D2D927CE1FC57D470094A4B2 /* XHSegmentControl.m */,
+				D2D927CF1FC57D470094A4B2 /* XHSegmentViewController.m */,
+				D2D927D01FC57D470094A4B2 /* XHSegmentItem.h */,
+			);
+			path = XHSegmentController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -443,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D28F5ED11FBA930900199FC5 /* ViewController.m in Sources */,
+				D2D927D21FC57D480094A4B2 /* XHSegmentControl.m in Sources */,
 				D28F5EDC1FBA930900199FC5 /* main.m in Sources */,
 				D28F5F101FBA939400199FC5 /* NavgationViewController.m in Sources */,
 				D28F5F131FBA939400199FC5 /* PathHelper.m in Sources */,
@@ -450,11 +495,14 @@
 				D28F5F121FBA939400199FC5 /* BaseTabBarController.m in Sources */,
 				D28F5F271FBA9EF500199FC5 /* IMGuideTool.m in Sources */,
 				D28F5F151FBA939400199FC5 /* LoginViewController.m in Sources */,
+				D257349A1FBC3BB3004CE0B4 /* HomeViewController.m in Sources */,
 				D25734971FBBDC5C004CE0B4 /* Target_Login.m in Sources */,
 				D28F5F181FBA939D00199FC5 /* UserModel.m in Sources */,
 				D28F5F141FBA939400199FC5 /* UIView+XMGExtension.m in Sources */,
 				D28F5F461FBAD2DC00199FC5 /* GuideViewController.m in Sources */,
+				D2D927D31FC57D480094A4B2 /* XHSegmentViewController.m in Sources */,
 				D28F5F111FBA939400199FC5 /* BaseTableViewController.m in Sources */,
+				D2D927D11FC57D480094A4B2 /* XHSegmentItem.m in Sources */,
 				D25734941FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m in Sources */,
 				D28F5F2A1FBA9F6800199FC5 /* IMNSUserDefaultsTool.m in Sources */,
 				D28F5ECE1FBA930900199FC5 /* AppDelegate.m in Sources */,

@@ -1,4 +1,5 @@
 platform :ios, '8.0'
 target'StartDemo'do
     pod 'CTMediator', '~> 12'
+    pod 'HMSegmentedControl', '~> 1.5.4'
 end

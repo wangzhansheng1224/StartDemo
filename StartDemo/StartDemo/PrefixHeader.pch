@@ -9,10 +9,19 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-
+/*! 颜色 */
 #define IMRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+/*! 字体 */
+#define IMFontSize(fontSize) [UIFont systemFontOfSize:fontSize]
+
+/*! weakSelf */
+#define IMWEAKSELF typeof(self) __weak weakSelf = self
+#define IMWeakSelf(type)  __weak typeof(type) weak##type = type;
+
+/*! Tabbar height. self.tabBarController.tabBar.height */
+#define  IMTabbarHeight         49.f
+
 #define JJBLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #define IMScreenWidth [UIScreen mainScreen].bounds.size.width
 #define IMScreenHeight [UIScreen mainScreen].bounds.size.height

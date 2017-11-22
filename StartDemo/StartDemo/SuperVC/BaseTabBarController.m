@@ -9,6 +9,7 @@
 #import "BaseTabBarController.h"
 #import "NavgationViewController.h"
 #import "ViewController.h"
+#import "HomeViewController.h"
 
 @interface BaseTabBarController ()
 
@@ -47,7 +48,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupChildVc:[[ViewController alloc]init] title:@"首页" image:@"a" selectedImage:@"a1"];
+    [self setupChildVc:[[HomeViewController alloc]init] title:@"首页" image:@"a" selectedImage:@"a1"];
     [self setupChildVc:[[ViewController alloc] init] title:@"动态" image:@"b" selectedImage:@"b1"];
     [self setupChildVc:[[ViewController alloc] init] title:@"活动" image:@"c" selectedImage:@"c1"];
     [self setupChildVc:[[ViewController alloc] init] title:@"个人" image:@"d" selectedImage:@"d1"];

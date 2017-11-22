@@ -20,7 +20,7 @@
     UINavigationBar *bar = [UINavigationBar appearance];
     //背景图片
 //    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
-    [bar setBarTintColor:IMRGBColor(222, 86, 46)];
+    [bar setBarTintColor:[UIColor whiteColor]];
     //导航栏字体大小和颜色
     [bar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20],
                        NSForegroundColorAttributeName:[UIColor whiteColor]}];
