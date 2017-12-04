@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "XHSegmentControl.h"
+#define DefaultSegmentHeight 44
 
 @interface XHSegmentViewController : UIViewController
 

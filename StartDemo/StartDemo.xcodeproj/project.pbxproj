@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		ADA5C63B1D3113866DA7D203 /* libPods-StartDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF742EA25652CC7F2E24BAA /* libPods-StartDemo.a */; };
+		D238538D1FD5281700E92576 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D238538C1FD5281700E92576 /* ActivityViewController.m */; };
 		D25734941FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */; };
 		D25734971FBBDC5C004CE0B4 /* Target_Login.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734961FBBDC5C004CE0B4 /* Target_Login.m */; };
-		D257349A1FBC3BB3004CE0B4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734991FBC3BB3004CE0B4 /* HomeViewController.m */; };
 		D28F5ECE1FBA930900199FC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5ECD1FBA930900199FC5 /* AppDelegate.m */; };
 		D28F5ED11FBA930900199FC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5ED01FBA930900199FC5 /* ViewController.m */; };
 		D28F5ED41FBA930900199FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28F5ED21FBA930900199FC5 /* Main.storyboard */; };
@@ -33,6 +33,7 @@
 		D2D927D11FC57D480094A4B2 /* XHSegmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CD1FC57D470094A4B2 /* XHSegmentItem.m */; };
 		D2D927D21FC57D480094A4B2 /* XHSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CE1FC57D470094A4B2 /* XHSegmentControl.m */; };
 		D2D927D31FC57D480094A4B2 /* XHSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CF1FC57D470094A4B2 /* XHSegmentViewController.m */; };
+		D2D927D61FC57E660094A4B2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927D51FC57E660094A4B2 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +57,12 @@
 		12B654A6A243522B282C5964 /* Pods-StartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-StartDemo/Pods-StartDemo.release.xcconfig"; sourceTree = "<group>"; };
 		67E20645E72A831C22076691 /* Pods-StartDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StartDemo/Pods-StartDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF742EA25652CC7F2E24BAA /* libPods-StartDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StartDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D238538B1FD5281700E92576 /* ActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		D238538C1FD5281700E92576 /* ActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		D25734921FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+CTMediatorLoginActions.h"; sourceTree = "<group>"; };
 		D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+CTMediatorLoginActions.m"; sourceTree = "<group>"; };
 		D25734951FBBDC5C004CE0B4 /* Target_Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Login.h; sourceTree = "<group>"; };
 		D25734961FBBDC5C004CE0B4 /* Target_Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Login.m; sourceTree = "<group>"; };
-		D25734981FBC3BB3004CE0B4 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		D25734991FBC3BB3004CE0B4 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		D28F5EC91FBA930900199FC5 /* StartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28F5ECC1FBA930900199FC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D28F5ECD1FBA930900199FC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +108,8 @@
 		D2D927CE1FC57D470094A4B2 /* XHSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentControl.m; sourceTree = "<group>"; };
 		D2D927CF1FC57D470094A4B2 /* XHSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentViewController.m; sourceTree = "<group>"; };
 		D2D927D01FC57D470094A4B2 /* XHSegmentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentItem.h; sourceTree = "<group>"; };
+		D2D927D41FC57E660094A4B2 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D2D927D51FC57E660094A4B2 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,11 +155,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D238538A1FD527F500E92576 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				D238538B1FD5281700E92576 /* ActivityViewController.h */,
+				D238538C1FD5281700E92576 /* ActivityViewController.m */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
 		D257349B1FBC3BD6004CE0B4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D25734981FBC3BB3004CE0B4 /* HomeViewController.h */,
-				D25734991FBC3BB3004CE0B4 /* HomeViewController.m */,
+				D2D927D41FC57E660094A4B2 /* HomeViewController.h */,
+				D2D927D51FC57E660094A4B2 /* HomeViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -196,6 +208,7 @@
 				D28F5ED51FBA930900199FC5 /* Assets.xcassets */,
 				D2D927C91FC57D400094A4B2 /* Library */,
 				D257349B1FBC3BD6004CE0B4 /* Home */,
+				D238538A1FD527F500E92576 /* Activity */,
 				D28F5F1C1FBA951800199FC5 /* NewVersions */,
 				D28F5F0D1FBA939400199FC5 /* Login */,
 				D28F5EFE1FBA939400199FC5 /* SuperVC */,
@@ -253,10 +266,10 @@
 		D28F5F0D1FBA939400199FC5 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				D28F5F161FBA939C00199FC5 /* UserModel.h */,
-				D28F5F171FBA939D00199FC5 /* UserModel.m */,
 				D28F5F0F1FBA939400199FC5 /* LoginViewController.h */,
 				D28F5F0E1FBA939400199FC5 /* LoginViewController.m */,
+				D28F5F161FBA939C00199FC5 /* UserModel.h */,
+				D28F5F171FBA939D00199FC5 /* UserModel.m */,
 				D25734921FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.h */,
 				D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */,
 				D25734951FBBDC5C004CE0B4 /* Target_Login.h */,
@@ -290,10 +303,10 @@
 			isa = PBXGroup;
 			children = (
 				D2D927CB1FC57D470094A4B2 /* XHSegmentViewController.h */,
-				D2D927CC1FC57D470094A4B2 /* XHSegmentControl.h */,
-				D2D927CD1FC57D470094A4B2 /* XHSegmentItem.m */,
-				D2D927CE1FC57D470094A4B2 /* XHSegmentControl.m */,
 				D2D927CF1FC57D470094A4B2 /* XHSegmentViewController.m */,
+				D2D927CC1FC57D470094A4B2 /* XHSegmentControl.h */,
+				D2D927CE1FC57D470094A4B2 /* XHSegmentControl.m */,
+				D2D927CD1FC57D470094A4B2 /* XHSegmentItem.m */,
 				D2D927D01FC57D470094A4B2 /* XHSegmentItem.h */,
 			);
 			path = XHSegmentController;
@@ -489,13 +502,13 @@
 				D28F5ED11FBA930900199FC5 /* ViewController.m in Sources */,
 				D2D927D21FC57D480094A4B2 /* XHSegmentControl.m in Sources */,
 				D28F5EDC1FBA930900199FC5 /* main.m in Sources */,
+				D2D927D61FC57E660094A4B2 /* HomeViewController.m in Sources */,
 				D28F5F101FBA939400199FC5 /* NavgationViewController.m in Sources */,
 				D28F5F131FBA939400199FC5 /* PathHelper.m in Sources */,
 				D28F5F1B1FBA93A400199FC5 /* NextViewController.m in Sources */,
 				D28F5F121FBA939400199FC5 /* BaseTabBarController.m in Sources */,
 				D28F5F271FBA9EF500199FC5 /* IMGuideTool.m in Sources */,
 				D28F5F151FBA939400199FC5 /* LoginViewController.m in Sources */,
-				D257349A1FBC3BB3004CE0B4 /* HomeViewController.m in Sources */,
 				D25734971FBBDC5C004CE0B4 /* Target_Login.m in Sources */,
 				D28F5F181FBA939D00199FC5 /* UserModel.m in Sources */,
 				D28F5F141FBA939400199FC5 /* UIView+XMGExtension.m in Sources */,
@@ -505,6 +518,7 @@
 				D2D927D11FC57D480094A4B2 /* XHSegmentItem.m in Sources */,
 				D25734941FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m in Sources */,
 				D28F5F2A1FBA9F6800199FC5 /* IMNSUserDefaultsTool.m in Sources */,
+				D238538D1FD5281700E92576 /* ActivityViewController.m in Sources */,
 				D28F5ECE1FBA930900199FC5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

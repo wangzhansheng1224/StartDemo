@@ -94,7 +94,7 @@
     
     NSMutableArray *arrayItem = [[NSMutableArray alloc] initWithCapacity:self.titles.count];
     
-    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat screenWidth = self.frame.size.width;
     CGFloat itemWidth = 0.;
     CGFloat itemHeight = CGRectGetHeight(self.frame);
     CGRect  itemRect = CGRectZero;
@@ -137,7 +137,7 @@
 }
 
 
-#pragma mark - Public Method
+#pragma mark - x Method
 
 - (void)load
 {
@@ -148,7 +148,7 @@
     
     //  load 高亮线
     self.lineLayer.backgroundColor = self.highlightColor.CGColor;
-     self.lineLayer.frame = CGRectMake(CGRectGetMinX(self.lineLayer.frame), CGRectGetHeight(self.frame) - self.lineWidth, CGRectGetWidth(self.lineLayer.frame), self.lineWidth);
+    self.lineLayer.frame = CGRectMake(CGRectGetMinX(self.lineLayer.frame), CGRectGetHeight(self.frame) - self.lineWidth, CGRectGetWidth(self.lineLayer.frame), self.lineWidth);
     
     // 初始化scrollview
     if (self.backgroundImage) {

@@ -11,6 +11,8 @@
 
 /*! 颜色 */
 #define IMRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+/*! 主题颜色 */
+#define COLOR_ORANGE IMRGBColor(224, 85, 35)
 
 /*! 字体 */
 #define IMFontSize(fontSize) [UIFont systemFontOfSize:fontSize]
@@ -23,10 +25,13 @@
 #define  IMTabbarHeight         49.f
 
 #define JJBLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
-#define IMScreenWidth [UIScreen mainScreen].bounds.size.width
-#define IMScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
-
+#define BAKit_ShowAlertWithMsg(msg) UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:msg preferredStyle:UIAlertControllerStyleAlert];\
+UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确 定" style:UIAlertActionStyleDefault handler:nil];\
+[alert addAction:sureAction];\
+[self presentViewController:alert animated:YES completion:nil];
 
 #import "UIView+XMGExtension.h"
 #import "UserModel.h"

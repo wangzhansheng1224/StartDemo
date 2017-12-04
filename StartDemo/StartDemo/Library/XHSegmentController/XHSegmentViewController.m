@@ -8,8 +8,6 @@
 
 #import "XHSegmentViewController.h"
 
-#define DefaultSegmentHeight 44
-
 @interface XHSegmentViewController ()
 <UIScrollViewDelegate, XHSegmentControlDelegate>
 
@@ -22,33 +20,6 @@
 @end
 
 @implementation XHSegmentViewController
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        
-        //10.19 添加title
-        UILabel *titleLabel = [[UILabel alloc]init];
-        titleLabel.backgroundColor = [UIColor clearColor];
-       
-        titleLabel.font = [UIFont boldSystemFontOfSize:18.f];
-        titleLabel.textAlignment = NSTextAlignmentCenter;
-        titleLabel.shadowOffset = CGSizeMake(0, 0);
-        self.navigationItem.titleView = titleLabel;
-    }
-    return self;
-}
-
-////支持旋转 10.17
-//-(BOOL)shouldAutorotate{
-//    return NO;
-//}
-////支持的方向
-//- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
-//    return UIInterfaceOrientationMaskPortrait;
-//}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -93,8 +64,8 @@
 {
     if (!_segmentControl)
     {
-        CGFloat y = !self.navigationController?20:0; //10.19 xiugai  64 --> 0
-        _segmentControl = [[XHSegmentControl alloc] initWithFrame:CGRectMake(0, y, [UIScreen mainScreen].bounds.size.width, DefaultSegmentHeight)];
+        CGFloat y = !self.navigationController?64:0;
+        _segmentControl = [[XHSegmentControl alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, DefaultSegmentHeight)];
         _segmentControl.delegate = self;
     }
     return _segmentControl;
@@ -105,12 +76,17 @@
     //  scrollView
     if (!_scrollView)
     {
-        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_segmentControl.frame), [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - CGRectGetMaxY(_segmentControl.frame))];
+        _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(_segmentControl.frame), [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - CGRectGetMaxY(_segmentControl.frame) - IMTabbarHeight)];
+        //不显示水品滚动条
         _scrollView.showsHorizontalScrollIndicator = NO;
+        //按页翻滚
         _scrollView.pagingEnabled = YES;
+        //规定用户提起手指后的滚动减速速率。
         _scrollView.decelerationRate = 0.5;
         _scrollView.delegate = self;
+        //规定是否在垂直方向在滚动到末尾时产生“反弹”
         _scrollView.alwaysBounceVertical = NO;
+        //点击状态栏时滑动到顶端
         _scrollView.scrollsToTop = NO;
         _scrollView.backgroundColor = [UIColor whiteColor];
     }
@@ -193,31 +169,6 @@
 #pragma mark - XHSegmentControlDelegate
 - (void)xhSegmentSelectAtIndex:(NSInteger)index animation:(BOOL)animation
 {
-    //07.24
-    if (index == 0) {
-        //编辑
-        _selectedBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _selectedBtn.frame = CGRectMake(0, 0, 60, 25);
-        _selectedBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-        _selectedBtn.layer.cornerRadius = 5;
-        _selectedBtn.layer.masksToBounds = YES;
-        [_selectedBtn setTitle:@"编辑" forState:UIControlStateNormal];
-        [_selectedBtn setTitle:@"完成" forState:UIControlStateSelected];
-        [_selectedBtn setBackgroundColor: [UIColor colorWithRed:0.0/255.0 green:183.0/255.0 blue:238.0/255.0 alpha:1.0]];
-        
-        [_selectedBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        
-        [_selectedBtn addTarget:self action:@selector(selectedBtnClick) forControlEvents:UIControlEventTouchUpInside];
-        
-        UIBarButtonItem *selectItem = [[UIBarButtonItem alloc] initWithCustomView:_selectedBtn];
-        
-        self.navigationItem.rightBarButtonItem = selectItem;
-    }else{
-        self.navigationItem.rightBarButtonItem = nil;
-        _selectedBtn.selected = NO;
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"bianji" object:_selectedBtn];
-    }
-    
 
     [self.viewControllers enumerateObjectsUsingBlock:^(UIViewController *  _Nonnull controller, NSUInteger idx, BOOL * _Nonnull stop)
      {
@@ -259,12 +210,6 @@
     }
     
     [self.scrollView scrollRectToVisible:view.frame animated:animation];
-}
-
-//07.24
-- (void)selectedBtnClick{
-    _selectedBtn.selected=!_selectedBtn.selected;
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"bianji" object:_selectedBtn];
 }
 
 #pragma mark - UIScrollViewDelegate

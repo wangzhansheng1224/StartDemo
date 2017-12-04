@@ -22,7 +22,7 @@
     NSArray *imageNameArray = @[@"guide_1", @"guide_2", @"guide_3"];
     
     _pageScroll = [[UIScrollView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    _pageScroll.contentSize = CGSizeMake(IMScreenWidth * imageNameArray.count, IMScreenHeight);
+    _pageScroll.contentSize = CGSizeMake(ScreenWidth * imageNameArray.count, ScreenHeight);
     //设置按页滑动
     _pageScroll.pagingEnabled = YES;
     //弹性设置
@@ -33,7 +33,7 @@
     [self.view addSubview:self.pageScroll];
     
     for (int i = 0; i < imageNameArray.count; i++) {
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(IMScreenWidth * i, 0, IMScreenWidth, IMScreenHeight)];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth * i, 0, ScreenWidth, ScreenHeight)];
         imageView.image=[UIImage imageNamed:imageNameArray[i]];
         
         [_pageScroll addSubview:imageView];

@@ -14,17 +14,23 @@
 
 @implementation BaseTableViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.tableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+        self.tableView.delegate=self;
+        self.tableView.dataSource=self;
+        self.tableView.tableFooterView=[[UIView alloc]init];
+        [self.view addSubview:self.tableView];
+        self.tableView.rowHeight = 50;
+        //分割符边距
+        self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
-    self.tableView.delegate=self;
-    self.tableView.dataSource=self;
-    self.tableView.tableFooterView=[[UIView alloc]init];
-    [self.view addSubview:self.tableView];
-    self.tableView.rowHeight = 50;
-    //分割符边距
-    self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    
     // Do any additional setup after loading the view.
 }
 
