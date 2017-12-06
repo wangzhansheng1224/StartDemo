@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import <Masonry.h>
+#import "UIBarButtonItem+MBCustom.h"
 
 @interface LoginViewController ()
 //手机号
@@ -24,16 +24,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"登录页";
+    [self setupNav];
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     //导航栏透明时将原点设置在导航栏下端
 //    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     [self.view addSubview:self.phoneTextField];
     [self.view addSubview:self.passWordTextField];
     [self.view addSubview:self.loginButton];
     [self.view addSubview:self.forgetPasswordButton];
     [self layoutPageSubviews];
     // Do any additional setup after loading the view.
+}
+
+- (void)setupNav{
+    UIBarButtonItem *registerButton = [UIBarButtonItem itmeWithNormalImage:nil high:nil target:self action:@selector(gotoregister) norColor:[UIColor whiteColor] highColor:[UIColor blackColor] title:@"注册账号"];
+    self.navigationItem.rightBarButtonItem = registerButton;
+    self.navigationItem.title = @"登录";
+}
+
+- (void)gotoregister{
+    BAKit_ShowAlertWithMsg(@"注册");
 }
 
 -(void)layoutPageSubviews{

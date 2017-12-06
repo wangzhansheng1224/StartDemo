@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ADA5C63B1D3113866DA7D203 /* libPods-StartDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF742EA25652CC7F2E24BAA /* libPods-StartDemo.a */; };
+		D225DA251FD6452E009CAAB2 /* UIBarButtonItem+MBCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = D225DA241FD6452E009CAAB2 /* UIBarButtonItem+MBCustom.m */; };
+		D225DA291FD6496D009CAAB2 /* dynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D225DA281FD6496D009CAAB2 /* dynamicViewController.m */; };
 		D238538D1FD5281700E92576 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D238538C1FD5281700E92576 /* ActivityViewController.m */; };
 		D25734941FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */; };
 		D25734971FBBDC5C004CE0B4 /* Target_Login.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734961FBBDC5C004CE0B4 /* Target_Login.m */; };
@@ -30,6 +32,10 @@
 		D28F5F271FBA9EF500199FC5 /* IMGuideTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5F261FBA9EF500199FC5 /* IMGuideTool.m */; };
 		D28F5F2A1FBA9F6800199FC5 /* IMNSUserDefaultsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5F291FBA9F6800199FC5 /* IMNSUserDefaultsTool.m */; };
 		D28F5F461FBAD2DC00199FC5 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5F441FBAD2DC00199FC5 /* GuideViewController.m */; };
+		D2D1F7491FD794FC0040B339 /* BANetManagerCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1F7421FD794FC0040B339 /* BANetManagerCache.m */; };
+		D2D1F74A1FD794FC0040B339 /* BANetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1F7431FD794FC0040B339 /* BANetManager.m */; };
+		D2D1F74B1FD794FC0040B339 /* UIImage+CompressImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1F7441FD794FC0040B339 /* UIImage+CompressImage.m */; };
+		D2D1F74E1FD7BE8F0040B339 /* dynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1F74D1FD7BE8F0040B339 /* dynamicModel.m */; };
 		D2D927D11FC57D480094A4B2 /* XHSegmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CD1FC57D470094A4B2 /* XHSegmentItem.m */; };
 		D2D927D21FC57D480094A4B2 /* XHSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CE1FC57D470094A4B2 /* XHSegmentControl.m */; };
 		D2D927D31FC57D480094A4B2 /* XHSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CF1FC57D470094A4B2 /* XHSegmentViewController.m */; };
@@ -57,6 +63,10 @@
 		12B654A6A243522B282C5964 /* Pods-StartDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-StartDemo/Pods-StartDemo.release.xcconfig"; sourceTree = "<group>"; };
 		67E20645E72A831C22076691 /* Pods-StartDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StartDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StartDemo/Pods-StartDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CFF742EA25652CC7F2E24BAA /* libPods-StartDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StartDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D225DA231FD6452E009CAAB2 /* UIBarButtonItem+MBCustom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MBCustom.h"; sourceTree = "<group>"; };
+		D225DA241FD6452E009CAAB2 /* UIBarButtonItem+MBCustom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+MBCustom.m"; sourceTree = "<group>"; };
+		D225DA271FD6496D009CAAB2 /* dynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dynamicViewController.h; sourceTree = "<group>"; };
+		D225DA281FD6496D009CAAB2 /* dynamicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dynamicViewController.m; sourceTree = "<group>"; };
 		D238538B1FD5281700E92576 /* ActivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
 		D238538C1FD5281700E92576 /* ActivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		D25734921FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+CTMediatorLoginActions.h"; sourceTree = "<group>"; };
@@ -102,6 +112,15 @@
 		D28F5F291FBA9F6800199FC5 /* IMNSUserDefaultsTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMNSUserDefaultsTool.m; sourceTree = "<group>"; };
 		D28F5F441FBAD2DC00199FC5 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		D28F5F451FBAD2DC00199FC5 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		D2D1F7421FD794FC0040B339 /* BANetManagerCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANetManagerCache.m; sourceTree = "<group>"; };
+		D2D1F7431FD794FC0040B339 /* BANetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BANetManager.m; sourceTree = "<group>"; };
+		D2D1F7441FD794FC0040B339 /* UIImage+CompressImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CompressImage.m"; sourceTree = "<group>"; };
+		D2D1F7451FD794FC0040B339 /* BANetManagerCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetManagerCache.h; sourceTree = "<group>"; };
+		D2D1F7461FD794FC0040B339 /* UIImage+CompressImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CompressImage.h"; sourceTree = "<group>"; };
+		D2D1F7471FD794FC0040B339 /* BANetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetManager.h; sourceTree = "<group>"; };
+		D2D1F7481FD794FC0040B339 /* BANetManager_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetManager_OC.h; sourceTree = "<group>"; };
+		D2D1F74C1FD7BE8F0040B339 /* dynamicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dynamicModel.h; sourceTree = "<group>"; };
+		D2D1F74D1FD7BE8F0040B339 /* dynamicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dynamicModel.m; sourceTree = "<group>"; };
 		D2D927CB1FC57D470094A4B2 /* XHSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentViewController.h; sourceTree = "<group>"; };
 		D2D927CC1FC57D470094A4B2 /* XHSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentControl.h; sourceTree = "<group>"; };
 		D2D927CD1FC57D470094A4B2 /* XHSegmentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentItem.m; sourceTree = "<group>"; };
@@ -153,6 +172,17 @@
 				CFF742EA25652CC7F2E24BAA /* libPods-StartDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D225DA261FD64954009CAAB2 /* dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				D225DA271FD6496D009CAAB2 /* dynamicViewController.h */,
+				D225DA281FD6496D009CAAB2 /* dynamicViewController.m */,
+				D2D1F74C1FD7BE8F0040B339 /* dynamicModel.h */,
+				D2D1F74D1FD7BE8F0040B339 /* dynamicModel.m */,
+			);
+			path = dynamic;
 			sourceTree = "<group>";
 		};
 		D238538A1FD527F500E92576 /* Activity */ = {
@@ -208,9 +238,10 @@
 				D28F5ED51FBA930900199FC5 /* Assets.xcassets */,
 				D2D927C91FC57D400094A4B2 /* Library */,
 				D257349B1FBC3BD6004CE0B4 /* Home */,
+				D225DA261FD64954009CAAB2 /* dynamic */,
 				D238538A1FD527F500E92576 /* Activity */,
-				D28F5F1C1FBA951800199FC5 /* NewVersions */,
 				D28F5F0D1FBA939400199FC5 /* Login */,
+				D28F5F1C1FBA951800199FC5 /* NewVersions */,
 				D28F5EFE1FBA939400199FC5 /* SuperVC */,
 				D28F5ED21FBA930900199FC5 /* Main.storyboard */,
 				D28F5ED71FBA930900199FC5 /* LaunchScreen.storyboard */,
@@ -247,20 +278,19 @@
 				D28F5F041FBA939400199FC5 /* BaseTableViewController.m */,
 				D28F5F071FBA939400199FC5 /* BaseTabBarController.h */,
 				D28F5F061FBA939400199FC5 /* BaseTabBarController.m */,
-				D28F5F081FBA939400199FC5 /* Tool */,
 			);
 			path = SuperVC;
 			sourceTree = "<group>";
 		};
-		D28F5F081FBA939400199FC5 /* Tool */ = {
+		D28F5F081FBA939400199FC5 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D225DA231FD6452E009CAAB2 /* UIBarButtonItem+MBCustom.h */,
+				D225DA241FD6452E009CAAB2 /* UIBarButtonItem+MBCustom.m */,
 				D28F5F091FBA939400199FC5 /* UIView+XMGExtension.h */,
 				D28F5F0C1FBA939400199FC5 /* UIView+XMGExtension.m */,
-				D28F5F0B1FBA939400199FC5 /* PathHelper.h */,
-				D28F5F0A1FBA939400199FC5 /* PathHelper.m */,
 			);
-			path = Tool;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		D28F5F0D1FBA939400199FC5 /* Login */ = {
@@ -270,6 +300,8 @@
 				D28F5F0E1FBA939400199FC5 /* LoginViewController.m */,
 				D28F5F161FBA939C00199FC5 /* UserModel.h */,
 				D28F5F171FBA939D00199FC5 /* UserModel.m */,
+				D28F5F0B1FBA939400199FC5 /* PathHelper.h */,
+				D28F5F0A1FBA939400199FC5 /* PathHelper.m */,
 				D25734921FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.h */,
 				D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */,
 				D25734951FBBDC5C004CE0B4 /* Target_Login.h */,
@@ -291,9 +323,25 @@
 			path = NewVersions;
 			sourceTree = "<group>";
 		};
+		D2D1F7411FD794FC0040B339 /* BANetManager */ = {
+			isa = PBXGroup;
+			children = (
+				D2D1F7471FD794FC0040B339 /* BANetManager.h */,
+				D2D1F7431FD794FC0040B339 /* BANetManager.m */,
+				D2D1F7421FD794FC0040B339 /* BANetManagerCache.m */,
+				D2D1F7451FD794FC0040B339 /* BANetManagerCache.h */,
+				D2D1F7461FD794FC0040B339 /* UIImage+CompressImage.h */,
+				D2D1F7441FD794FC0040B339 /* UIImage+CompressImage.m */,
+				D2D1F7481FD794FC0040B339 /* BANetManager_OC.h */,
+			);
+			path = BANetManager;
+			sourceTree = "<group>";
+		};
 		D2D927C91FC57D400094A4B2 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				D2D1F7411FD794FC0040B339 /* BANetManager */,
+				D28F5F081FBA939400199FC5 /* Category */,
 				D2D927CA1FC57D470094A4B2 /* XHSegmentController */,
 			);
 			path = Library;
@@ -499,24 +547,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D1F74E1FD7BE8F0040B339 /* dynamicModel.m in Sources */,
 				D28F5ED11FBA930900199FC5 /* ViewController.m in Sources */,
 				D2D927D21FC57D480094A4B2 /* XHSegmentControl.m in Sources */,
 				D28F5EDC1FBA930900199FC5 /* main.m in Sources */,
 				D2D927D61FC57E660094A4B2 /* HomeViewController.m in Sources */,
 				D28F5F101FBA939400199FC5 /* NavgationViewController.m in Sources */,
 				D28F5F131FBA939400199FC5 /* PathHelper.m in Sources */,
+				D2D1F74A1FD794FC0040B339 /* BANetManager.m in Sources */,
+				D2D1F74B1FD794FC0040B339 /* UIImage+CompressImage.m in Sources */,
 				D28F5F1B1FBA93A400199FC5 /* NextViewController.m in Sources */,
+				D2D1F7491FD794FC0040B339 /* BANetManagerCache.m in Sources */,
 				D28F5F121FBA939400199FC5 /* BaseTabBarController.m in Sources */,
 				D28F5F271FBA9EF500199FC5 /* IMGuideTool.m in Sources */,
 				D28F5F151FBA939400199FC5 /* LoginViewController.m in Sources */,
 				D25734971FBBDC5C004CE0B4 /* Target_Login.m in Sources */,
 				D28F5F181FBA939D00199FC5 /* UserModel.m in Sources */,
 				D28F5F141FBA939400199FC5 /* UIView+XMGExtension.m in Sources */,
+				D225DA291FD6496D009CAAB2 /* dynamicViewController.m in Sources */,
 				D28F5F461FBAD2DC00199FC5 /* GuideViewController.m in Sources */,
 				D2D927D31FC57D480094A4B2 /* XHSegmentViewController.m in Sources */,
 				D28F5F111FBA939400199FC5 /* BaseTableViewController.m in Sources */,
 				D2D927D11FC57D480094A4B2 /* XHSegmentItem.m in Sources */,
 				D25734941FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m in Sources */,
+				D225DA251FD6452E009CAAB2 /* UIBarButtonItem+MBCustom.m in Sources */,
 				D28F5F2A1FBA9F6800199FC5 /* IMNSUserDefaultsTool.m in Sources */,
 				D238538D1FD5281700E92576 /* ActivityViewController.m in Sources */,
 				D28F5ECE1FBA930900199FC5 /* AppDelegate.m in Sources */,

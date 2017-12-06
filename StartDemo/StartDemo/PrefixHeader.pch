@@ -36,5 +36,8 @@ UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确 定" style:UIAl
 #import "UIView+XMGExtension.h"
 #import "UserModel.h"
 #import "CTMediator+CTMediatorLoginActions.h"
+#import <Masonry.h>
+#import "BANetManager.h"
+#import <YYModel.h>
 
 #endif /* PrefixHeader_pch */
