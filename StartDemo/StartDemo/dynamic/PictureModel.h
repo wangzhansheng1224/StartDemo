@@ -1,5 +1,5 @@
 //
-//  dynamicModel.h
+//  PictureModel.h
 //  StartDemo
 //
 //  Created by 王战胜 on 2017/12/6.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Picture : NSObject
+@interface PictureModel : NSObject
 @property (nonatomic, assign) NSInteger Id;
 @property (nonatomic, copy)   NSString *PictureDescription;
 @property (nonatomic, assign) NSInteger width;
@@ -16,4 +16,3 @@
 @property (nonatomic, copy)   NSString *photoUrl;
 @property (nonatomic, assign) NSInteger tripId;
 @end
-

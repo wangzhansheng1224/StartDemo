@@ -13,6 +13,7 @@
 		D238538D1FD5281700E92576 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D238538C1FD5281700E92576 /* ActivityViewController.m */; };
 		D25734941FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */; };
 		D25734971FBBDC5C004CE0B4 /* Target_Login.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734961FBBDC5C004CE0B4 /* Target_Login.m */; };
+		D262C9891FF37A7F00C93678 /* foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = D262C9881FF37A7F00C93678 /* foundation+Log.m */; };
 		D28F5ECE1FBA930900199FC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5ECD1FBA930900199FC5 /* AppDelegate.m */; };
 		D28F5ED11FBA930900199FC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5ED01FBA930900199FC5 /* ViewController.m */; };
 		D28F5ED41FBA930900199FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28F5ED21FBA930900199FC5 /* Main.storyboard */; };
@@ -35,7 +36,9 @@
 		D2D1F7491FD794FC0040B339 /* BANetManagerCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1F7421FD794FC0040B339 /* BANetManagerCache.m */; };
 		D2D1F74A1FD794FC0040B339 /* BANetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1F7431FD794FC0040B339 /* BANetManager.m */; };
 		D2D1F74B1FD794FC0040B339 /* UIImage+CompressImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1F7441FD794FC0040B339 /* UIImage+CompressImage.m */; };
-		D2D1F74E1FD7BE8F0040B339 /* dynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1F74D1FD7BE8F0040B339 /* dynamicModel.m */; };
+		D2D1F75A1FD7DCA70040B339 /* PictureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1F7591FD7DCA70040B339 /* PictureModel.m */; };
+		D2D1F7601FD8DE930040B339 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D1F75F1FD8DE930040B339 /* PickerViewController.m */; };
+		D2D1F7621FD918470040B339 /* 1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D2D1F7611FD918470040B339 /* 1.PNG */; };
 		D2D927D11FC57D480094A4B2 /* XHSegmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CD1FC57D470094A4B2 /* XHSegmentItem.m */; };
 		D2D927D21FC57D480094A4B2 /* XHSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CE1FC57D470094A4B2 /* XHSegmentControl.m */; };
 		D2D927D31FC57D480094A4B2 /* XHSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D927CF1FC57D470094A4B2 /* XHSegmentViewController.m */; };
@@ -73,6 +76,7 @@
 		D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+CTMediatorLoginActions.m"; sourceTree = "<group>"; };
 		D25734951FBBDC5C004CE0B4 /* Target_Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Login.h; sourceTree = "<group>"; };
 		D25734961FBBDC5C004CE0B4 /* Target_Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Login.m; sourceTree = "<group>"; };
+		D262C9881FF37A7F00C93678 /* foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "foundation+Log.m"; sourceTree = "<group>"; };
 		D28F5EC91FBA930900199FC5 /* StartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28F5ECC1FBA930900199FC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D28F5ECD1FBA930900199FC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,8 +123,11 @@
 		D2D1F7461FD794FC0040B339 /* UIImage+CompressImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CompressImage.h"; sourceTree = "<group>"; };
 		D2D1F7471FD794FC0040B339 /* BANetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetManager.h; sourceTree = "<group>"; };
 		D2D1F7481FD794FC0040B339 /* BANetManager_OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BANetManager_OC.h; sourceTree = "<group>"; };
-		D2D1F74C1FD7BE8F0040B339 /* dynamicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dynamicModel.h; sourceTree = "<group>"; };
-		D2D1F74D1FD7BE8F0040B339 /* dynamicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dynamicModel.m; sourceTree = "<group>"; };
+		D2D1F7581FD7DCA70040B339 /* PictureModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureModel.h; sourceTree = "<group>"; };
+		D2D1F7591FD7DCA70040B339 /* PictureModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureModel.m; sourceTree = "<group>"; };
+		D2D1F75E1FD8DE930040B339 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		D2D1F75F1FD8DE930040B339 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		D2D1F7611FD918470040B339 /* 1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.PNG; sourceTree = "<group>"; };
 		D2D927CB1FC57D470094A4B2 /* XHSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentViewController.h; sourceTree = "<group>"; };
 		D2D927CC1FC57D470094A4B2 /* XHSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentControl.h; sourceTree = "<group>"; };
 		D2D927CD1FC57D470094A4B2 /* XHSegmentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentItem.m; sourceTree = "<group>"; };
@@ -177,10 +184,13 @@
 		D225DA261FD64954009CAAB2 /* dynamic */ = {
 			isa = PBXGroup;
 			children = (
+				D2D1F7611FD918470040B339 /* 1.PNG */,
 				D225DA271FD6496D009CAAB2 /* dynamicViewController.h */,
 				D225DA281FD6496D009CAAB2 /* dynamicViewController.m */,
-				D2D1F74C1FD7BE8F0040B339 /* dynamicModel.h */,
-				D2D1F74D1FD7BE8F0040B339 /* dynamicModel.m */,
+				D2D1F75E1FD8DE930040B339 /* PickerViewController.h */,
+				D2D1F75F1FD8DE930040B339 /* PickerViewController.m */,
+				D2D1F7581FD7DCA70040B339 /* PictureModel.h */,
+				D2D1F7591FD7DCA70040B339 /* PictureModel.m */,
 			);
 			path = dynamic;
 			sourceTree = "<group>";
@@ -235,6 +245,7 @@
 				D28F5F191FBA93A400199FC5 /* NextViewController.h */,
 				D28F5F1A1FBA93A400199FC5 /* NextViewController.m */,
 				D28F5F1D1FBA9BC500199FC5 /* PrefixHeader.pch */,
+				D262C9881FF37A7F00C93678 /* foundation+Log.m */,
 				D28F5ED51FBA930900199FC5 /* Assets.xcassets */,
 				D2D927C91FC57D400094A4B2 /* Library */,
 				D257349B1FBC3BD6004CE0B4 /* Home */,
@@ -470,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D28F5ED91FBA930900199FC5 /* LaunchScreen.storyboard in Resources */,
+				D2D1F7621FD918470040B339 /* 1.PNG in Resources */,
 				D28F5ED61FBA930900199FC5 /* Assets.xcassets in Resources */,
 				D28F5ED41FBA930900199FC5 /* Main.storyboard in Resources */,
 			);
@@ -547,10 +559,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2D1F74E1FD7BE8F0040B339 /* dynamicModel.m in Sources */,
 				D28F5ED11FBA930900199FC5 /* ViewController.m in Sources */,
 				D2D927D21FC57D480094A4B2 /* XHSegmentControl.m in Sources */,
 				D28F5EDC1FBA930900199FC5 /* main.m in Sources */,
+				D2D1F7601FD8DE930040B339 /* PickerViewController.m in Sources */,
 				D2D927D61FC57E660094A4B2 /* HomeViewController.m in Sources */,
 				D28F5F101FBA939400199FC5 /* NavgationViewController.m in Sources */,
 				D28F5F131FBA939400199FC5 /* PathHelper.m in Sources */,
@@ -562,8 +574,10 @@
 				D28F5F271FBA9EF500199FC5 /* IMGuideTool.m in Sources */,
 				D28F5F151FBA939400199FC5 /* LoginViewController.m in Sources */,
 				D25734971FBBDC5C004CE0B4 /* Target_Login.m in Sources */,
+				D2D1F75A1FD7DCA70040B339 /* PictureModel.m in Sources */,
 				D28F5F181FBA939D00199FC5 /* UserModel.m in Sources */,
 				D28F5F141FBA939400199FC5 /* UIView+XMGExtension.m in Sources */,
+				D262C9891FF37A7F00C93678 /* foundation+Log.m in Sources */,
 				D225DA291FD6496D009CAAB2 /* dynamicViewController.m in Sources */,
 				D28F5F461FBAD2DC00199FC5 /* GuideViewController.m in Sources */,
 				D2D927D31FC57D480094A4B2 /* XHSegmentViewController.m in Sources */,

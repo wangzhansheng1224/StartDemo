@@ -39,5 +39,6 @@ UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确 定" style:UIAl
 #import <Masonry.h>
 #import "BANetManager.h"
 #import <YYModel.h>
+#import <MJExtension.h>
 
 #endif /* PrefixHeader_pch */
