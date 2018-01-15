@@ -13,7 +13,6 @@
 		D238538D1FD5281700E92576 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D238538C1FD5281700E92576 /* ActivityViewController.m */; };
 		D25734941FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */; };
 		D25734971FBBDC5C004CE0B4 /* Target_Login.m in Sources */ = {isa = PBXBuildFile; fileRef = D25734961FBBDC5C004CE0B4 /* Target_Login.m */; };
-		D262C9891FF37A7F00C93678 /* foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = D262C9881FF37A7F00C93678 /* foundation+Log.m */; };
 		D28F5ECE1FBA930900199FC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5ECD1FBA930900199FC5 /* AppDelegate.m */; };
 		D28F5ED11FBA930900199FC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D28F5ED01FBA930900199FC5 /* ViewController.m */; };
 		D28F5ED41FBA930900199FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D28F5ED21FBA930900199FC5 /* Main.storyboard */; };
@@ -76,7 +75,6 @@
 		D25734931FBBDA54004CE0B4 /* CTMediator+CTMediatorLoginActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+CTMediatorLoginActions.m"; sourceTree = "<group>"; };
 		D25734951FBBDC5C004CE0B4 /* Target_Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Login.h; sourceTree = "<group>"; };
 		D25734961FBBDC5C004CE0B4 /* Target_Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Login.m; sourceTree = "<group>"; };
-		D262C9881FF37A7F00C93678 /* foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "foundation+Log.m"; sourceTree = "<group>"; };
 		D28F5EC91FBA930900199FC5 /* StartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28F5ECC1FBA930900199FC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D28F5ECD1FBA930900199FC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -245,7 +243,6 @@
 				D28F5F191FBA93A400199FC5 /* NextViewController.h */,
 				D28F5F1A1FBA93A400199FC5 /* NextViewController.m */,
 				D28F5F1D1FBA9BC500199FC5 /* PrefixHeader.pch */,
-				D262C9881FF37A7F00C93678 /* foundation+Log.m */,
 				D28F5ED51FBA930900199FC5 /* Assets.xcassets */,
 				D2D927C91FC57D400094A4B2 /* Library */,
 				D257349B1FBC3BD6004CE0B4 /* Home */,
@@ -577,7 +574,6 @@
 				D2D1F75A1FD7DCA70040B339 /* PictureModel.m in Sources */,
 				D28F5F181FBA939D00199FC5 /* UserModel.m in Sources */,
 				D28F5F141FBA939400199FC5 /* UIView+XMGExtension.m in Sources */,
-				D262C9891FF37A7F00C93678 /* foundation+Log.m in Sources */,
 				D225DA291FD6496D009CAAB2 /* dynamicViewController.m in Sources */,
 				D28F5F461FBAD2DC00199FC5 /* GuideViewController.m in Sources */,
 				D2D927D31FC57D480094A4B2 /* XHSegmentViewController.m in Sources */,

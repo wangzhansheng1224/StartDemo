@@ -13,7 +13,6 @@ static NSString * const url2 = @"http://openapi.db.39.net/app/GetDrugsByCategory
 static NSString * const url3 = @"http://openapi.db.39.net/app/GetDrugsByCategory";
 #define HOMEPAGE @"http://openapi.ypt.langma.cn/yws/?json=%7B%0A%20%20%22op_type%22%20%3A%201003%2C%0A%20%20%22c_ver%22%20%3A%20%224.1.1%22%2C%0A%20%20%22c_type%22%20%3A%200%2C%0A%20%20%22uid%22%20%3A%200%2C%0A%20%20%22cid%22%20%3A%200%0A%7D"
 
-
 #import "PictureModel.h"
 #import "PickerViewController.h"
 #import <AFNetworking.h>
@@ -104,17 +103,18 @@ static NSString * const url3 = @"http://openapi.db.39.net/app/GetDrugsByCategory
     [dic setObject:@"5" forKey:@"limit"];
     [dic setObject:@"9DFAAD5404FCB6168EA6840DCDFF39E5" forKey:@"sign"];
     
+
     [BANetManager ba_request_GETWithUrlString:HOMEPAGE isNeedCache:NO parameters:nil successBlock:^(id response) {
         NSLog(@"get 请求数据结果： *** %@", response);
-        NSMutableArray *contentArr = [[NSMutableArray alloc]init];
-        [response enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        NSMutableArray *contentArr = [[NSMutableArray alloc]init];
+//        [response enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
 //            PictureModel *picture = [PictureModel mj_objectWithKeyValues:obj];
-//            PictureModel *picture=[PictureModel yy_modelWithDictionary:obj];
+//            PictureModel *picture2=[PictureModel yy_modelWithDictionary:obj];
 //            [contentArr addObject:picture];
-            if (idx == 1) {
-                *stop = YES;
-            }
-        }];
+//            if (idx == 1) {
+//                *stop = YES;
+//            }
+//        }];
         NSString *msg = [NSString stringWithFormat:@"get 请求数据结果：%@", response];
         BAKit_ShowAlertWithMsg(msg);
     } failureBlock:^(NSError *error) {
