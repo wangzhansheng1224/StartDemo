@@ -336,8 +336,8 @@
 			children = (
 				D2D1F7471FD794FC0040B339 /* BANetManager.h */,
 				D2D1F7431FD794FC0040B339 /* BANetManager.m */,
-				D2D1F7421FD794FC0040B339 /* BANetManagerCache.m */,
 				D2D1F7451FD794FC0040B339 /* BANetManagerCache.h */,
+				D2D1F7421FD794FC0040B339 /* BANetManagerCache.m */,
 				D2D1F7461FD794FC0040B339 /* UIImage+CompressImage.h */,
 				D2D1F7441FD794FC0040B339 /* UIImage+CompressImage.m */,
 				D2D1F7481FD794FC0040B339 /* BANetManager_OC.h */,
